@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Taildwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Material icons google -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Remix icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!--  -->
+
+    <style>
+      * {
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <header class="">
+        <div
+          class="py-5 px-2 flex-col items-center justify-center bg-[#850F11] hidden sm:flex rounded-b-[0.7rem]"
+        >
+          <!-- prettier-ignore -->
+          <svg class="fill-slate-50 h-14 "   id="Tap_ter_Imagen" data-name="Tap   ter Imagen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 372.28 99.38"><defs></defs><path  d="M164.34,109.53v69.88l-17.49-2.92v-67h-20.4V95h58.29v14.55Z" transform="translate(-126.45 -94.98)"/><path  d="M209.69,136c0-1.94-2.05-2.9-6.15-2.9h-6.15q-6.15,0-6.15,5.79L172.78,136q0-17.4,27.68-17.4T228.14,136v23.19q0,17.4-27.68,17.4t-27.68-17.4q0-14.49,18.46-17.39T209.69,136Zm-18.45,23.19c0,1.94,2,2.9,6.15,2.9h6.15q6.15,0,6.15-5.8v-2.9Q191.24,156.25,191.24,159.14Z" transform="translate(-126.45 -94.98)"/><path  d="M234.73,140.9q0-23.76,26.43-23.76t26.43,23.76v11.88q0,23.76-26.43,23.76a46.3,46.3,0,0,1-8.81-.77v18.59l-17.62-3Zm35.24,0q0-8.91-5.87-8.91h-5.88q-5.87,0-5.87,8.91v11.88q0,8.91,5.87,8.91h5.88q5.86,0,5.87-8.91Z" transform="translate(-126.45 -94.98)"/><path  d="M361.73,102.71l18.45-3v17.82h18.46v14.85H380.18v20.79q0,8.91,6.15,8.91h12.31V177h-9.23q-27.69,0-27.68-23.76Z" transform="translate(-126.45 -94.98)"/><path  d="M419.62,158.72q0,3,6.15,3h6.15q6.15,0,6.15-5.94l18.46,3q0,17.82-27.68,17.82t-27.69-17.82V135q0-17.82,27.69-17.82T456.53,135q0,14.85-18.46,17.82T419.62,158.72ZM438.07,135q0-3-6.15-3h-6.15q-6.15,0-6.15,5.94v3Q438.07,137.93,438.07,135Z" transform="translate(-126.45 -94.98)"/><path  d="M461.82,177V141.33q0-23.76,27.68-23.76h9.23v14.85h-12.3q-6.15,0-6.15,8.91V177Z" transform="translate(-126.45 -94.98)"/><path  d="M294.34,177.12l20.77-32-18-27.3h16.85l9.62,14.53,9.61-14.53H350l-18,27.3,20.77,32H335.41l-11.87-18.75-11.87,18.75Z" transform="translate(-126.45 -94.98)"/></svg>
+        </div>
+      </header>
+      <div
+        class="container mx-auto px-2.5 max-w-none flex flex-col justify-center items-center"
+      >
+        <!-- taxter responsive logo -->
+        <div
+          class="m-14 mb-2 flex flex-col items-center justify-center sm:hidden"
+        >
+          <!-- prettier-ignore -->
+          <svg class="fill-[#8F00C7] h-12"   id="Tap_ter_Imagen" data-name="Tap   ter Imagen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 372.28 99.38"><defs></defs><path d="M164.34,109.53v69.88l-17.49-2.92v-67h-20.4V95h58.29v14.55Z" transform="translate(-126.45 -94.98)"/><path  d="M209.69,136c0-1.94-2.05-2.9-6.15-2.9h-6.15q-6.15,0-6.15,5.79L172.78,136q0-17.4,27.68-17.4T228.14,136v23.19q0,17.4-27.68,17.4t-27.68-17.4q0-14.49,18.46-17.39T209.69,136Zm-18.45,23.19c0,1.94,2,2.9,6.15,2.9h6.15q6.15,0,6.15-5.8v-2.9Q191.24,156.25,191.24,159.14Z" transform="translate(-126.45 -94.98)"/><path  d="M234.73,140.9q0-23.76,26.43-23.76t26.43,23.76v11.88q0,23.76-26.43,23.76a46.3,46.3,0,0,1-8.81-.77v18.59l-17.62-3Zm35.24,0q0-8.91-5.87-8.91h-5.88q-5.87,0-5.87,8.91v11.88q0,8.91,5.87,8.91h5.88q5.86,0,5.87-8.91Z" transform="translate(-126.45 -94.98)"/><path  d="M361.73,102.71l18.45-3v17.82h18.46v14.85H380.18v20.79q0,8.91,6.15,8.91h12.31V177h-9.23q-27.69,0-27.68-23.76Z" transform="translate(-126.45 -94.98)"/><path  d="M419.62,158.72q0,3,6.15,3h6.15q6.15,0,6.15-5.94l18.46,3q0,17.82-27.68,17.82t-27.69-17.82V135q0-17.82,27.69-17.82T456.53,135q0,14.85-18.46,17.82T419.62,158.72ZM438.07,135q0-3-6.15-3h-6.15q-6.15,0-6.15,5.94v3Q438.07,137.93,438.07,135Z" transform="translate(-126.45 -94.98)"/><path  d="M461.82,177V141.33q0-23.76,27.68-23.76h9.23v14.85h-12.3q-6.15,0-6.15,8.91V177Z" transform="translate(-126.45 -94.98)"/><path  d="M294.34,177.12l20.77-32-18-27.3h16.85l9.62,14.53,9.61-14.53H350l-18,27.3,20.77,32H335.41l-11.87-18.75-11.87,18.75Z" transform="translate(-126.45 -94.98)"/></svg>
+        </div>
+
+        <!-- Tarjeta de presentación -->
+        <div
+          class="mt-28 mb-14 sm:mt-16 py-10 px-6 w-full sm:w-auto min-w-[auto] min-h-[15rem] shadow-[0_0_40px_-12px_#000] rounded-[20px] flex flex-col sm:flex-row items-center justify-center relative"
+        >
+          <!-- Image wrapper -->
+          <div
+            class="w-44 h-44 border-solid border-[4px] border-[#850F11]/5 bg-white rounded-full shadow-[0_0_20px_-8px_#000] overflow-hidden absolute left-1/2 sm:left-0 top-0 sm:top-auto -translate-x-1/2 -translate-y-1/2 sm:-translate-y-0"
+          >
+            <img
+              class="object-cover"
+              src="https://administracion.univalle.edu.co/images/profesores/BIBIANA_RENDON_ALVAREZ.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="w-20 h-20 relative"></div>
+          <!-- Content -->
+          <div
+            class="font-['Open_Sans',sans-serif] mx-4 flex flex-col max-w-[100%] justify-center"
+          >
+            <h2 class="capitalize text-[28px] leading-8 font-extrabold">
+              bibiana rendón álvarez
+            </h2>
+            <h3 class="text-lg leading-5">Docente Universidad del Valle</h3>
+
+            <ul class="list-none list-outside mt-8">
+              <!-- Email -->
+              <li class="mt-4 flex items-center">
+                <a
+                  target="_blank"
+                  class="text-gray-600/60 visited:text-purple-600 hover:text-black"
+                  href="mailto: bibiana.rendon@correounivalle.edu.co"
+                >
+                  bibiana.rendon@correounivalle.edu.co
+                </a>
+              </li>
+
+              <li class="mt-4 flex">
+                <a
+                  class="rounded-lg px-5 py-3 bg-[#850F11] hover:bg-slate-300 text-white hover:text-black uppercase text-base font-extrabold"
+                  target="_blank"
+                  href="https://edicionesdelau.com/producto/contabilidad-financiera-4/ "
+                >
+                  Mi libro
+                </a>
+                <!-- <a
+                  class="rounded-lg px-4 py-3 bg-[#850F11]/20 hover:bg-[#850F11]/40 text-[#850F11] font-bold"
+                  target="_blank"
+                  href="https://edicionesdelau.com/producto/contabilidad-financiera-4/ ">
+                  Mi libro
+                </a> -->
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="mt-20 p-6 shadow-[0_0_40px_-12px_#000] rounded-[20px] flex flex-col"> -->
+
+          <!-- Image -->
+
+          <!-- content -->
+
+          <!-- </div> -->
+          <!-- <div class="p-1 shadow-[0_0_40px_1px_#000000]"  >
+            asd
+          </div> -->
+        </div>
+
+        <!--  Minimal info -->
+        <div class="mb-10 mt-6 flex flex-col items-center justify-center">
+          <p class="text-lg max-w-[400px] text-center">
+            Investigadora Junior, reconocida por Colciencias. Integrante del
+            Grupo de Investigación Previsión y Pensamiento Estratégico de la
+            Universidad del Valle- Categoría A1.
+          </p>
+        </div>
+        <div class="py-2 mb-6 w-full bg-gray-200 flex flex-col items-center">
+          <span class="text-lg max-w-[400px] text-center font-bold"
+            >Integrante REDICEAC.
+          </span>
+        </div>
+
+        <!-- social -->
+        <div
+          class="mt-4 mb-10 container mx-auto flex flex-col items-center justify-center"
+        >
+          <div class="flex justify-between text-4xl">
+            <a
+              class="duration-75 ease-in-out rounded-full relative p-7 m-3 bg-[#850F11] hover:bg-slate-300 text-white hover:text-gray-900 hover:text-[2.50rem] hover:shadow-lg"
+              href="https://www.facebook.com/bibiana.a.39"
+              target="_blank"
+            >
+              <i
+                class="ri-facebook-fill absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+              ></i>
+            </a>
+            <a
+              class="duration-75 ease-in-out rounded-full relative p-7 m-3 bg-[#850F11] hover:bg-slate-300 text-white hover:text-gray-900 hover:text-[2.50rem] hover:shadow-lg"
+              href="https://www.instagram.com/bibiaren/"
+              target="_blank"
+            >
+              <i
+                class="ri-instagram-fill absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+              ></i>
+            </a>
+            <a
+              class="duration-75 ease-in-out rounded-full relative p-7 m-3 bg-[#850F11] hover:bg-slate-300 text-white hover:text-gray-900 hover:text-[2.50rem] hover:shadow-lg"
+              href="https://www.youtube.com/channel/UCajezRHmc85_6N0zlO9tNVw"
+              target="_blank"
+            >
+              <i
+                class="ri-youtube-fill absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+              ></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- biografia -->
+
+        <div
+          class="w-full py-10 px-10 flex-col items-center justify-center bg-[#850F11] flex rounded-t-[0.7rem] text-slate-100"
+        >
+          <p class="text-lg leading-[22px] font-['Open_Sans',sans-serif]">
+            Contadora Pública y Magister en Administración de la Universidad del
+            Valle. Profesora Asociada del Departamento de Contabilidad y
+            Finanzas de la Facultad de Ciencias de la Administración de la
+            Universidad del Valle. Directora de Nuevas Tecnologías y Educación
+            Virtual de la Universidad del Valle, exVicedecana académica de la
+            Facultad de Ciencias de la Administración (2019-2022). Experiencia
+            docente de 17 años en varias universidades. Posee experiencia
+            profesional de más de 20 años en el área administrativa, financiera,
+            contable y tributaria en diferentes tipos de organizaciones con y
+            sin ánimo de lucro.
+          </p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
